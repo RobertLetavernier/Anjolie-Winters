@@ -1,0 +1,58 @@
+* {
+	/*! border : 1px solid black; */
+	outline-style: solid;
+	outline-color: green;
+	outline-width: thin;
+}
+.cardFrame {
+	width: 210px;
+	height: 297px;
+	border-radius: 10px;
+	background: aqua;
+	margin: 5px;
+	float: left;
+	position:  relative;
+}
+
+.container
+{
+	position :absolute;
+	display: block;
+	
+}
+.left-bar
+{
+	width: 40px;
+	top: 40px;
+}
+.right-bar
+{
+	width: 40px;
+	top: 60px;
+	right:0px; 
+}
+.rulebox
+{
+	bottom : 0px;
+	width:100%;
+	height: 94px;
+}
+.title
+{
+	width: 100%;
+}
+
+
+
+.inner 
+{
+	display:inline-block;
+	float left;
+	vertical-align: middle;
+}
+.picto
+{
+	width:30px;
+	height:30px;
+	margin: 4px;
+}
