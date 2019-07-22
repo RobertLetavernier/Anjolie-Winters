@@ -1,7 +1,7 @@
 <?php
 $file = 'data.csv';
 function getCsv($input) {
-	return str_getcsv ( $input, ';', '"', '\\');
+	return str_getcsv ( $input, ',', '"', '\\');
 }
 
     $csv = array_map('getCsv', file($file));
@@ -34,25 +34,27 @@ function getCsv($input) {
  * Ability box
  */
  foreach ($csv as $card) {
-    echo PHP_EOL . "<div class=\"cardFrame\">                            ";
+	echo PHP_EOL . '<!-- ' . print_r($card, 1) . ' -->';
+    echo PHP_EOL . "<div class=\"cardFrame\" style=\"background-image: url('img/{$card['id']}.jpg');\">                            ";
     echo PHP_EOL . "	<div class=\"container title\">                  ";
-    echo PHP_EOL . "		<div class=\"inner picto\"><img src=\"picto/{$card['suit']}\"  /></div>";
-    echo PHP_EOL . "		<div class=\"inner picto\"><img src=\"picto/{$card['color']}\" /></div>";
-    echo PHP_EOL . "		<div class=\"inner head\">{$card['id']}{$card['Bang name']}</div> ";
+    echo !$card['color'] ? '' : PHP_EOL . "		<div class=\"inner picto\"><img src=\"picto/{$card['color']}\" /></div>";
+    echo !$card['suit']  ? '' : PHP_EOL . "		<div class=\"inner picto\"><img src=\"picto/{$card['suit']}\"  /></div>";
+    // echo PHP_EOL . "		<div class=\"inner head\">{$card['Bang name']}</div> ";
     echo PHP_EOL . "	</div>                                           ";
     echo PHP_EOL . "	<div class=\"container left-bar\">               ";
-    echo PHP_EOL . "		<div class=\"inner picto\"><img src=\"picto/{$card['rule picto 1']}\" /></div>";
-    echo PHP_EOL . "		<div class=\"inner picto\"><img src=\"picto/{$card['rule picto 2']}\" /></div>";
-    echo PHP_EOL . "		<div class=\"inner picto\"><img src=\"picto/{$card['rule picto 3']}\" /></div>";
-    echo PHP_EOL . "		<div class=\"inner picto\"><img src=\"picto/{$card['rule picto 4']}\" /></div>";
+    echo !$card['p1'] ? '' : PHP_EOL . "		<div class=\"inner picto\"><img src=\"picto/{$card['p1']}\" /></div>";
+    echo !$card['p2'] ? '' : PHP_EOL . "		<div class=\"inner picto\"><img src=\"picto/{$card['p2']}\" /></div>";
+    echo !$card['p3'] ? '' : PHP_EOL . "		<div class=\"inner picto\"><img src=\"picto/{$card['p3']}\" /></div>";
+    echo !$card['p4'] ? '' : PHP_EOL . "		<div class=\"inner picto\"><img src=\"picto/{$card['p4']}\" /></div>";
     echo PHP_EOL . "	</div>                                           ";
     echo PHP_EOL . "	<div class=\"container right-bar\">              ";
-    echo PHP_EOL . "		<div class=\"inner picto\">c</div>           ";
-    echo PHP_EOL . "		<div class=\"inner picto\">d</div>           ";
+    echo !$card['p5'] ? '' : PHP_EOL . "		<div class=\"inner picto\">{$card['p5']}</div>           ";
+    echo !$card['p6'] ? '' : PHP_EOL . "		<div class=\"inner picto\">{$card['p6']}</div>           ";
+    echo !$card['p7'] ? '' : PHP_EOL . "		<div class=\"inner picto\">{$card['p7']}</div>           ";
     echo PHP_EOL . "	</div>                                           ";
-    echo PHP_EOL . "	<div class=\"container rulebox\">                ";
-    echo PHP_EOL . "		{$card['Ability box']}                         ";
-    echo PHP_EOL . "	</div>                                           ";
+    echo !$card['Ability box'] ? '' : PHP_EOL . "	<div class=\"container rulebox\">                ";
+    echo !$card['Ability box'] ? '' : PHP_EOL . "		{$card['Ability box']}                         ";
+    echo !$card['Ability box'] ? '' : PHP_EOL . "	</div>                                           ";
     echo PHP_EOL . "</div>                                               ";
  }
 ?>
