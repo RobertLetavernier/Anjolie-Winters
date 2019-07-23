@@ -1,20 +1,46 @@
 * {
 	/*! border : 1px solid black; */
-	outline-style: solid;
+	/*! outline-style: solid; */
 	outline-color: green;
 	outline-width: thin;
 }
+
 .cardFrame {
-	width: 210px;
-	height: 297px;
-	border-radius: 10px;
+	width: 897px;
+	height: 1497px;
+	border-radius: 500px;
 	background: #eee;
 	margin: 5px;
 	float: left;
 	position:  relative;
 	background-position: center;
 	background-size: cover;
-	border: 1px solid black;
+	background-repeat: normal;
+}
+
+.color-w\.svg, .color-w\.svg img
+{
+	border: 5px solid yellow;
+}
+
+.color-u\.svg, .color-u\.svg img
+{
+	border: 5px solid blue;
+}
+
+.color-b\.svg, .color-b\.svg img
+{
+	border: 5px solid black;
+}
+
+.color-r\.svg, .color-r\.svg img
+{
+	border: 5px solid red;
+}
+
+.color-g\.svg, .color-g\.svg img 
+{
+	border: 5px solid green;
 }
 
 .container
@@ -25,8 +51,8 @@
 }
 .left-bar
 {
-	width: 40px;
-	top: 39px;
+	width: 150px;
+	top: 151px;
 }
 .right-bar
 {
@@ -39,12 +65,13 @@
 	bottom : 0px;
 	width:100%;
 	height: 94px;
-	background-image: linear-gradient(to bottom, rgba(255,255,255,0.5), rgb(255, 255, 255));
+	/*! background-image: linear-gradient(to bottom, rgba(255,255,255,0.5), rgb(255, 255, 255)); */
 }
 .title
 {
 	width: 100%;
-	background-image: linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,1));
+	/*! background-image: linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,1)); */
+	height: 150px;
 }
 
 
@@ -57,13 +84,14 @@
 }
 .picto
 {
-	width:30px;
-	height:30px;
-	margin: 4px;
+	width:130px;
+	height:130px;
+	margin: 10px;
 }
 .picto img
 {
-	width:30px;
-	height:30px;
-	/*! margin: 4px; */
+	width:100%;
+	height:auto;
+	/*! background-color: white; */
+	border-radius: 100px;
 }

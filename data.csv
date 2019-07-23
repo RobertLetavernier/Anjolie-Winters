@@ -1,111 +1,111 @@
 Ability box,id,color,suit,love letter name,ll,love letter rule box,Bang name,Border,p1,p2,p3,p4,EDS,p5,p6,p7
-,a1,b.svg,A.svg,,,,BANG,brown,%bang,%at_range,,,Krieger II,0,0,2
-,a2,b.svg,2.svg,,,,BANG,brown,%bang,%at_range,,,Krieger II,0,0,2
-,a3,b.svg,3.svg,,,,BANG,brown,%bang,%at_range,,,Krieger II,0,0,2
-,a4,b.svg,4.svg,,,,BANG,brown,%bang,%at_range,,,Krieger II,0,0,2
-,a5,b.svg,5.svg,,,,BANG,brown,%bang,%at_range,,,Ki Krieger,0,1,1
-,a6,b.svg,6.svg,,,,BANG,brown,%bang,%at_range,,,Ki Krieger,0,1,1
-,a7,b.svg,7.svg,,,,Missed,brown,%missed,,,,Krieger I,0,0,1
-,a8,b.svg,8.svg,,,,Missed,brown,%missed,,,,Krieger I,0,0,1
-,a9,b.svg,9.svg,,,,Missed,brown,%missed,,,,Krieger I,0,0,1
-,a10,b.svg,X.svg,,,,Jail,blue,%see_rules,,,,Krieger III,0,0,3
+,a01,b.svg,A.svg,,,,BANG,brown,bang.svg,,,,Krieger II,0,0,2
+,a02,b.svg,2.svg,,,,BANG,brown,bang.svg,,,,Krieger II,0,0,2
+,a03,b.svg,3.svg,,,,BANG,brown,bang.svg,,,,Krieger II,0,0,2
+,a04,b.svg,4.svg,,,,BANG,brown,bang.svg,,,,Krieger II,0,0,2
+,a05,b.svg,5.svg,,,,BANG,brown,bang.svg,,,,Ki Krieger,0,1,1
+,a06,b.svg,6.svg,,,,BANG,brown,bang.svg,,,,Ki Krieger,0,1,1
+,a07,b.svg,7.svg,,,,Missed,brown,missed.svg,,,,Krieger I,0,0,1
+,a08,b.svg,8.svg,,,,Missed,brown,missed.svg,,,,Krieger I,0,0,1
+,a09,b.svg,9.svg,,,,Missed,brown,missed.svg,,,,Krieger I,0,0,1
+,a10,b.svg,X.svg,,,,Jail,blue,jail.svg,,,,Krieger III,0,0,3
 ,a11,b.svg,,,,,,,,,,,Krieger III,0,0,3
-,a12,b.svg,V.svg,,,,Schofield,blue,%range_2,,,,Ninja Attentäter,,,
-,a13,b.svg,C.svg,,,,Schofield,blue,%range_2,,,,Ninja Attentäter,,,
-,a14,b.svg,,,,,Schofield,blue,%range_2,,,,Ninja Attentäter,,,
-,a15,b.svg,R.svg,,,,Rev. Carabine,blue,%range_3,,,,Schusswaffen,-20,-2,6
-,a16,b.svg,D.svg,,,,Mistress,brown,%discard,%opponent,,,Ki Okugata,5,4,0
-,a17,b.svg,,,,,Panic!,brown,%draw,%range_1,,,Ehre Okugata,10,3,0
-,a18,b.svg,,,,,Beer,brown,%beer,,,,Gesicht wahren,,,
-,a19,b.svg,,,,,Beer,brown,%beer,,,,Gesicht wahren,,,
-,a20,b.svg,,,,,Beer,brown,%beer,,,,Gesicht wahren,,,
-,a21,b.svg,,,,,Beer,brown,%beer,,,,Gesicht wahren,,,
-,a22,b.svg,,,,,Beer,brown,%beer,,,,Gesicht wahren,,,
-,b1,r.svg,A.svg,,,,BANG,brown,%bang,%at_range,,,Krieger II,0,0,2
-"When you discard the Guard, choose a player and name a number (other than 1). If that player has that number in their hand, that player is knocked out of the round.",b2,r.svg,2.svg,Guard Odette,1,,BANG,brown,%bang,%at_range,,,Krieger II,0,0,2
-"When you discard the Guard, choose a player and name a number (other than 1). If that player has that number in their hand, that player is knocked out of the round.",b3,r.svg,3.svg,Guard Odette,1,,BANG,brown,%bang,%at_range,,,Krieger II,0,0,2
-"When you discard the Guard, choose a player and name a number (other than 1). If that player has that number in their hand, that player is knocked out of the round.",b4,r.svg,4.svg,Guard Odette,1,,BANG,brown,%bang,%at_range,,,Krieger II,0,0,2
-"When you discard the Guard, choose a player and name a number (other than 1). If that player has that number in their hand, that player is knocked out of the round.",b5,r.svg,5.svg,Guard Odette,1,,BANG,brown,%bang,%at_range,,,Ki Krieger,0,1,1
-"When you discard the Guard, choose a player and name a number (other than 1). If that player has that number in their hand, that player is knocked out of the round.",b6,r.svg,6.svg,Guard Odette,1,,BANG,brown,%bang,%at_range,,,Ki Krieger,0,1,1
-"When you discard the Priest, you can look at another player’s hand. Do not reveal the hand to any other players.",b7,r.svg,7.svg,Priest Tomas,2,,Missed,brown,%missed,,,,Krieger I,0,0,1
-"When you discard the Priest, you can look at another player’s hand. Do not reveal the hand to any other players.",b8,r.svg,8.svg,Priest Tomas,2,,Missed,brown,%missed,,,,Krieger I,0,0,1
-"When you discard the Baron, choose another player still in the round. You and that player secretly compare your hands. The player with the lower number is knocked out of the round. In case of a tie, nothing happens",b9,r.svg,9.svg,Baron Talus,3,,Missed,brown,%missed,,,,Krieger I,0,0,1
+,a12,b.svg,V.svg,,,,Schofield,blue,range.svg,range.svg,,,Ninja Attentäter,,,
+,a13,b.svg,C.svg,,,,Schofield,blue,range.svg,range.svg,,,Ninja Attentäter,,,
+,a14,b.svg,,,,,Schofield,blue,range.svg,range.svg,,,Ninja Attentäter,,,
+,a15,b.svg,K.svg,,,,Rev. Carabine,blue,range.svg,range.svg,range.svg,,Schusswaffen,-20,-2,6
+,a16,b.svg,D.svg,,,,Mistress,brown,discard.svg,opponent.svg,,,Ki Okugata,5,4,0
+,a17,b.svg,,,,,Panic!,brown,draw.svg,range.svg,,,Ehre Okugata,10,3,0
+,a18,b.svg,,,,,Beer,brown,beer.svg,,,,Gesicht wahren,,,
+,a19,b.svg,,,,,Beer,brown,beer.svg,,,,Gesicht wahren,,,
+,a20,b.svg,,,,,Beer,brown,beer.svg,,,,Gesicht wahren,,,
+,a21,b.svg,,,,,Beer,brown,beer.svg,,,,Gesicht wahren,,,
+,a22,b.svg,,,,,Beer,brown,beer.svg,,,,Gesicht wahren,,,
+,b01,r.svg,A.svg,,,,BANG,brown,bang.svg,,,,Krieger II,0,0,2
+"When you discard the Guard, choose a player and name a number (other than 1). If that player has that number in their hand, that player is knocked out of the round.",b02,r.svg,2.svg,Guard Odette,1,,BANG,brown,bang.svg,,,,Krieger II,0,0,2
+"When you discard the Guard, choose a player and name a number (other than 1). If that player has that number in their hand, that player is knocked out of the round.",b03,r.svg,3.svg,Guard Odette,1,,BANG,brown,bang.svg,,,,Krieger II,0,0,2
+"When you discard the Guard, choose a player and name a number (other than 1). If that player has that number in their hand, that player is knocked out of the round.",b04,r.svg,4.svg,Guard Odette,1,,BANG,brown,bang.svg,,,,Krieger II,0,0,2
+"When you discard the Guard, choose a player and name a number (other than 1). If that player has that number in their hand, that player is knocked out of the round.",b05,r.svg,5.svg,Guard Odette,1,,BANG,brown,bang.svg,,,,Ki Krieger,0,1,1
+"When you discard the Guard, choose a player and name a number (other than 1). If that player has that number in their hand, that player is knocked out of the round.",b06,r.svg,6.svg,Guard Odette,1,,BANG,brown,bang.svg,,,,Ki Krieger,0,1,1
+"When you discard the Priest, you can look at another player’s hand. Do not reveal the hand to any other players.",b07,r.svg,7.svg,Priest Tomas,2,,Missed,brown,missed.svg,,,,Krieger I,0,0,1
+"When you discard the Priest, you can look at another player’s hand. Do not reveal the hand to any other players.",b08,r.svg,8.svg,Priest Tomas,2,,Missed,brown,missed.svg,,,,Krieger I,0,0,1
+"When you discard the Baron, choose another player still in the round. You and that player secretly compare your hands. The player with the lower number is knocked out of the round. In case of a tie, nothing happens",b09,r.svg,9.svg,Baron Talus,3,,Missed,brown,missed.svg,,,,Krieger I,0,0,1
 "When you discard the Baron, choose another player still in the round. You and that player secretly compare your hands. The player with the lower number is knocked out of the round. In case of a tie, nothing happens",b10,r.svg,X.svg,Baron Talus,3,,,,,,,,Krieger III,0,0,3
 ,b11,r.svg,,,,,,,,,,,Krieger III,0,0,3
-"When you discard Prince Arnaud, choose one player still in the round (including yourself). That player discards his or her hand (but doesn’t apply its effect, unless it is the Princess, see page 8) and draws a new one",b12,r.svg,V.svg,Prince Arnaud,5,,Horse,blue,%distance_up,,,,Ninja Dieb,,,
-"When you discard Prince Arnaud, choose one player still in the round (including yourself). That player discards his or her hand (but doesn’t apply its effect, unless it is the Princess, see page 8) and draws a new one",b13,r.svg,C.svg,Prince Arnaud,5,,Appaloosa,blue,%range_up,,,,Ninja Dieb,,,
-,b14,r.svg,,,,,Rev. Carabine,blue,%range_3,,,,,,,
-"When you discard King Arnaud IV, trade the card in your hand with the card held by another player of your choice.",b15,r.svg,R.svg,King Arnaud IV,6,,Winchester,blue,%range_3,,,,No-Dachi der Ahnen,5,1,3
-"If you ever have the Countess and either the King or Prince in your hand, you must discard the Countess. You do not have to reveal the other card in your hand. Of course, you can also discard the Countess even if you do not have a royal family member in your hand. The Countess likes to play mind games....",b16,r.svg,D.svg,Countess Wilhelmina,7,,Mistress,brown,%discard,%opponent,,,Ki Okugata,5,4,0
-"When you discard the Handmaid, you are immune to the effects of other players’ cards until the start of your next turn.",b17,r.svg,,Handmaid Susannah,4,,Panic!,brown,%draw,%range_1,,,Ehre Okugata,10,3,0
+"When you discard Prince Arnaud, choose one player still in the round (including yourself). That player discards his or her hand (but doesn’t apply its effect, unless it is the Princess, see page 8) and draws a new one",b12,r.svg,V.svg,Prince Arnaud,5,,Horse,blue,distance_up.svg,,,,Ninja Dieb,,,
+"When you discard Prince Arnaud, choose one player still in the round (including yourself). That player discards his or her hand (but doesn’t apply its effect, unless it is the Princess, see page 8) and draws a new one",b13,r.svg,C.svg,Prince Arnaud,5,,Appaloosa,blue,range.svg,,,,Ninja Dieb,,,
+,b14,r.svg,,,,,Rev. Carabine,blue,range.svg,range.svg,range.svg,,,,,
+"When you discard King Arnaud IV, trade the card in your hand with the card held by another player of your choice.",b15,r.svg,K.svg,King Arnaud IV,6,,Winchester,blue,range.svg,range.svg,range.svg,,No-Dachi der Ahnen,5,1,3
+"If you ever have the Countess and either the King or Prince in your hand, you must discard the Countess. You do not have to reveal the other card in your hand. Of course, you can also discard the Countess even if you do not have a royal family member in your hand. The Countess likes to play mind games....",b16,r.svg,D.svg,Countess Wilhelmina,7,,Mistress,brown,discard.svg,opponent.svg,,,Ki Okugata,5,4,0
+"When you discard the Handmaid, you are immune to the effects of other players’ cards until the start of your next turn.",b17,r.svg,,Handmaid Susannah,4,,Panic!,brown,draw.svg,range.svg,,,Ehre Okugata,10,3,0
 "When you discard the Handmaid, you are immune to the effects of other players’ cards until the start of your next turn.",b18,r.svg,,Handmaid Susannah,4,,,,,,,,Ehre Okugata,10,3,0
 ,b19,r.svg,,,,,,,,,,,Gesicht wahren,,,
 ,b20,r.svg,,,,,,,,,,,Gesicht wahren,,,
-,b21,r.svg,,,,,Beer,brown,%beer,,,,Gesicht wahren,,,
+,b21,r.svg,,,,,Beer,brown,beer.svg,,,,Gesicht wahren,,,
 ,b22,r.svg,,,,,,,,,,,Gesicht wahren,,,
-,c1,g.svg,A.svg,,,,BANG,brown,%bang,%at_range,,,Krieger II,0,0,2
-,c2,g.svg,2.svg,,,,BANG,brown,%bang,%at_range,,,Krieger II,0,0,2
-,c3,g.svg,3.svg,,,,BANG,brown,%bang,%at_range,,,Krieger II,0,0,2
-,c4,g.svg,4.svg,,,,BANG,brown,%bang,%at_range,,,Krieger II,0,0,2
-,c5,g.svg,5.svg,,,,BANG,brown,%bang,%at_range,,,Ki Krieger,0,1,1
-,c6,g.svg,6.svg,,,,BANG,brown,%bang,%at_range,,,Ki Krieger,0,1,1
-,c7,g.svg,7.svg,,,,Missed,brown,%missed,,,,Krieger I,0,0,1
-,c8,g.svg,8.svg,,,,Missed,brown,%missed,,,,Krieger I,0,0,1
-,c9,g.svg,9.svg,,,,Missed,brown,%missed,,,,Krieger I,0,0,1
-,c10,g.svg,X.svg,,,,Jail,blue,%see_rules,,,,Krieger III,0,0,3
+,c01,g.svg,A.svg,,,,BANG,brown,bang.svg,,,,Krieger II,0,0,2
+,c02,g.svg,2.svg,,,,BANG,brown,bang.svg,,,,Krieger II,0,0,2
+,c03,g.svg,3.svg,,,,BANG,brown,bang.svg,,,,Krieger II,0,0,2
+,c04,g.svg,4.svg,,,,BANG,brown,bang.svg,,,,Krieger II,0,0,2
+,c05,g.svg,5.svg,,,,BANG,brown,bang.svg,,,,Ki Krieger,0,1,1
+,c06,g.svg,6.svg,,,,BANG,brown,bang.svg,,,,Ki Krieger,0,1,1
+,c07,g.svg,7.svg,,,,Missed,brown,missed.svg,,,,Krieger I,0,0,1
+,c08,g.svg,8.svg,,,,Missed,brown,missed.svg,,,,Krieger I,0,0,1
+,c09,g.svg,9.svg,,,,Missed,brown,missed.svg,,,,Krieger I,0,0,1
+,c10,g.svg,X.svg,,,,Jail,blue,jail.svg,,,,Krieger III,0,0,3
 ,c11,g.svg,,,,,,,,,,,Krieger III,0,0,3
-,c12,g.svg,V.svg,,,,Horse,blue,%distance_up,,,,Ninja Dieb,,,
-,c13,g.svg,C.svg,,,,Barrel,blue,%draw_heart,%missed,,,Schmied Masamune,10,1,4
-,c14,g.svg,,,,,Barrel,blue,%draw_heart,%missed,,,,,,
-,c15,g.svg,R.svg,,,,Dynamite,blue,%see_rules,,,,Noh Theater,20,3,0
-,c16,g.svg,D.svg,,,,Mistress,brown,%discard,%opponent,,,Ki Okugata,5,4,0
-,c17,g.svg,,,,,Panic!,brown,%draw,%range_1,,,Ehre Okugata,10,3,0
-,c18,g.svg,,,,,Wells Fargo,brown,%draw,%draw,%draw,,Elite Ninja Dieb,,,
-,c19,g.svg,,,,,Stagecoach,brown,%draw,%draw,,,Elite Ninja Dieb,,,
-,c20,g.svg,,,,,Stagecoach,brown,%draw,%draw,,,Elite Ninja Dieb,,,
-,c21,g.svg,,,,,General Store,brown,%see_rules,,,,Elite Ninja Dieb,,,
-,c22,g.svg,,,,,General Store,brown,%see_rules,,,,Elite Ninja Dieb,,,
-,d1,w.png,A.svg,,,,BANG,brown,%bang,%at_range,,,Krieger II,0,0,2
-,d2,w.png,2.svg,,,,BANG,brown,%bang,%at_range,,,Krieger II,0,0,2
-,d3,w.png,3.svg,,,,BANG,brown,%bang,%at_range,,,Krieger II,0,0,2
-,d4,w.png,4.svg,,,,BANG,brown,%bang,%at_range,,,Krieger II,0,0,2
-,d5,w.png,5.svg,,,,BANG,brown,%bang,%at_range,,,Ki Krieger,0,1,1
-,d6,w.png,6.svg,,,,BANG,brown,%bang,%at_range,,,Ki Krieger,0,1,1
-,d7,w.png,7.svg,,,,Missed,brown,%missed,,,,Krieger I,0,0,1
-,d8,w.png,8.svg,,,,Missed,brown,%missed,,,,Krieger I,0,0,1
-,d9,w.png,9.svg,,,,Missed,brown,%missed,,,,Krieger I,0,0,1
-,d10,w.png,X.svg,,,,Jail,blue,%see_rules,,,,Krieger I,0,0,1
-,d11,w.png,,,,,,,,,,,Krieger III,0,0,3
-,d12,w.png,V.svg,,,,Volcanic,blue,%see_rules,%range_1,,,Burg Odawara,,,
-,d13,w.png,C.svg,,,,Volcanic,blue,%see_rules,%range_1,,,Burg Osaka,,,
-,d14,w.png,,,,,Remington,blue,%range_3,,,,Burg Himeji,,,
-,d15,w.png,R.svg,,,,Gatling,brown,%bang,%all_opponents,,,Daisho der Ahnen,,,
-,d16,w.png,D.svg,,,,Mistress,brown,%discard,%opponent,,,Ki Okugata,5,4,0
-,d17,w.png,,,,,Panic!,brown,%draw,%range_1,,,Ehre Okugata,10,3,0
-,d18,w.png,,,,,Duel,brown,%see_rules,,,,Entehrung,,,
-,d19,w.png,,,,,Duel,brown,%see_rules,,,,Entehrung,,,
-,d20,w.png,,,,,Duel,brown,%see_rules,,,,Entehrung,,,
-,d21,w.png,,,,,indians,brown,%see_rules,,,,Ninja Attentäter,,,
-,d22,w.png,,,,,indians,brown,%see_rules,,,,Ninja Attentäter,,,
-"As soon as she has no cards in her hand, she draws a card from the draw pile",e1,u.png,,,,,Suzy Lafayette ,none,%lifepoint,%lifepoint,%lifepoint,%lifepoint,Start-Daimyo,5,0,1
-"he is considered to have a Mustang in play at all times; all other players must add 1 to the distance to him. If he has another real Mustang in play, he can count both of them, increasing all distances to him by a total of 2.",e2,u.png,,,,,Paul Regret,none,%lifepoint,%lifepoint,%lifepoint,,Start-Daimyo,5,0,1
-"During the first phase of his turn, he may choose to draw the first card from the top of the discard pile or from the deck. Then, he draws the second card from the deck",e3,u.png,,,,,Pedro Ramirez,none,%lifepoint,%lifepoint,%lifepoint,%lifepoint,Start-Daimyo,5,0,1
-"She can play BANG! cards as Missed! cards and vice versa. If she plays a Missed! as a BANG!, she cannot play another BANG! card that turn (unless she has a Volcanic in play).",e4,u.png,,,,,Calamity Janet,none,%lifepoint,%lifepoint,%lifepoint,%lifepoint,Start-Daimyo,10,0,2
-"Each time he loses a life point due to a card played by another player, he draws a random card from the hands of that player (one card for each life point). If that player has no more cards, too bad!, he does not draw. Note that Dynamite damages are not caused by any player",e5,u.png,,,,,El Gringo,none,%lifepoint,%lifepoint,%lifepoint,,Start-Daimyo,10,0,2
-"Whenever he is the target of a BANG!, he may ""draw!"": on a Heart, he is missed",e6,u.png,,,,,Jourdonnais,none,%lifepoint,%lifepoint,%lifepoint,%lifepoint,Start-Daimyo,10,0,2
-"Each time he is required to ""draw!"" he flips the top two cards from the deck, and chooses the result he prefers. Discard both cards afterwards",e7,u.png,,,,,Lucky Duke,none,%lifepoint,%lifepoint,%lifepoint,%lifepoint,Samurai/Ronin,0,6,0
-Players trying to cancel his BANG! cards need to play 2 Missed!,e8,u.png,,,,,Slab the Killer,none,%lifepoint,%lifepoint,%lifepoint,%lifepoint,Samurai/Ronin,0,6,0
-He can play any number of BANG! during his turn,e9,u.png,,,,,Willy the Kid,none,%lifepoint,%lifepoint,%lifepoint,%lifepoint,Samurai/Ronin,0,6,0
-"During phase 1 of his turn, he may choose to draw the first card from the deck, or randomly from the hand of any other player. Then he draws the second card from the deck",e10,u.png,,,,,Jesse Jones,none,%lifepoint,%lifepoint,%lifepoint,%lifepoint,Samurai/Ronin,0,6,0
-"Each time he loses a life point, he immediately draws a card from the deck",e11,u.png,,,,,Bart Cassidy,none,%lifepoint,%lifepoint,%lifepoint,%lifepoint,Samurai/Ronin,0,6,0
-"during phase 1 of his turn, he must show the second card he draws: if it’s Heart or Diamonds (just like a 'draw!'), he draws one additional card (without revealing it).",e12,u.png,,,,,Black Jack,none,%lifepoint,%lifepoint,%lifepoint,%lifepoint,Samurai/Ronin,0,6,0
-"During phase 1 of his turn, he looks at the top three cards of the deck: he chooses 2 to draw, and puts the other one back on the top of the deck, face down",e13,u.png,,,,,Kit Carlson,none,%lifepoint,%lifepoint,%lifepoint,%lifepoint,Daimyo,10,0,4
-"Rose Doolan is considered to have an Scope (Appaloosa in older versions) in play at all times; she sees the other players at a distance decreased by 1. If she has another real Scope in play, she can count both of them, reducing her distance to all other players by a total of 2.",e14,u.png,,,,,Rose Doolan,none,%lifepoint,%lifepoint,%lifepoint,%lifepoint,Daimyo,15,2,3
-"At any time, he may discard 2 cards from his hand to regain one life point. If he is willing and able, he can use this ability more than once at a time. The BANG! FAQ spells out that Sid Ketchum can use his ability out of turn: ""Q26. Can Sid Ketchum use his ability even outside his turn, like a Beer card? A. Yes, he can.""",e15,u.png,,,,,Sid Ketchum,none,%lifepoint,%lifepoint,%lifepoint,%lifepoint,Daimyo,20,1,5
-"Whenever a character is eliminated from the game, Sam takes all the cards that player had in his hand and in play, and adds them to his hand",e16,u.png,,,,,Vulture Sam,none,%lifepoint,%lifepoint,%lifepoint,%lifepoint,Daimyo,30,1,4
-,e17,u.png,,,,,,,,,,,Leibwache,,,
-,e18,u.png,,,,,,,,,,,Leibwache,,,
-,e19,u.png,,,,,,,,,,,Leibwache,,,
-,e20,u.png,,,,,,,,,,,Leibwache,,,
-,e21,u.png,,,,,,,,,,,Leibwache,,,
-If you discard the Princess—no matter how or why—she has tossed your letter into the fire. You are immediately knocked out of the round.,e22,u.png,,Princess Annette,8,,,,,,,,Shogun,,,
+,c12,g.svg,V.svg,,,,Horse,blue,distance_up.svg,,,,Ninja Dieb,,,
+,c13,g.svg,C.svg,,,,Barrel,blue,draw_heart.svg,missed.svg,,,Schmied Masamune,10,1,4
+,c14,g.svg,,,,,Barrel,blue,draw_heart.svg,missed.svg,,,,,,
+,c15,g.svg,K.svg,,,,Dynamite,blue,see_rules.svg,,,,Noh Theater,20,3,0
+,c16,g.svg,D.svg,,,,Mistress,brown,discard.svg,opponent.svg,,,Ki Okugata,5,4,0
+,c17,g.svg,,,,,Panic!,brown,draw.svg,range.svg,,,Ehre Okugata,10,3,0
+,c18,g.svg,,,,,Wells Fargo,brown,draw.svg,draw.svg,draw.svg,,Elite Ninja Dieb,,,
+,c19,g.svg,,,,,Stagecoach,brown,draw.svg,draw.svg,,,Elite Ninja Dieb,,,
+,c20,g.svg,,,,,Stagecoach,brown,draw.svg,draw.svg,,,Elite Ninja Dieb,,,
+,c21,g.svg,,,,,General Store,brown,see_rules.svg,,,,Elite Ninja Dieb,,,
+,c22,g.svg,,,,,General Store,brown,see_rules.svg,,,,Elite Ninja Dieb,,,
+,d01,w.svg,A.svg,,,,BANG,brown,bang.svg,,,,Krieger II,0,0,2
+,d02,w.svg,2.svg,,,,BANG,brown,bang.svg,,,,Krieger II,0,0,2
+,d03,w.svg,3.svg,,,,BANG,brown,bang.svg,,,,Krieger II,0,0,2
+,d04,w.svg,4.svg,,,,BANG,brown,bang.svg,,,,Krieger II,0,0,2
+,d05,w.svg,5.svg,,,,BANG,brown,bang.svg,,,,Ki Krieger,0,1,1
+,d06,w.svg,6.svg,,,,BANG,brown,bang.svg,,,,Ki Krieger,0,1,1
+,d07,w.svg,7.svg,,,,Missed,brown,missed.svg,,,,Krieger I,0,0,1
+,d08,w.svg,8.svg,,,,Missed,brown,missed.svg,,,,Krieger I,0,0,1
+,d09,w.svg,9.svg,,,,Missed,brown,missed.svg,,,,Krieger I,0,0,1
+,d10,w.svg,X.svg,,,,Jail,blue,jail.svg,,,,Krieger I,0,0,1
+,d11,w.svg,,,,,,,,,,,Krieger III,0,0,3
+,d12,w.svg,V.svg,,,,Volcanic,blue,see_rules.svg,,,,Burg Odawara,,,
+,d13,w.svg,C.svg,,,,Volcanic,blue,see_rules.svg,,,,Burg Osaka,,,
+,d14,w.svg,,,,,Remington,blue,range.svg,range.svg,range.svg,,Burg Himeji,,,
+,d15,w.svg,K.svg,,,,Gatling,brown,bang.svg,all_opponents.svg,,,Daisho der Ahnen,,,
+,d16,w.svg,D.svg,,,,Mistress,brown,discard.svg,opponent.svg,,,Ki Okugata,5,4,0
+,d17,w.svg,,,,,Panic!,brown,draw.svg,range.svg,,,Ehre Okugata,10,3,0
+,d18,w.svg,,,,,Duel,brown,see_rules.svg,,,,Entehrung,,,
+,d19,w.svg,,,,,Duel,brown,see_rules.svg,,,,Entehrung,,,
+,d20,w.svg,,,,,Duel,brown,see_rules.svg,,,,Entehrung,,,
+,d21,w.svg,,,,,indians,brown,see_rules.svg,,,,Ninja Attentäter,,,
+,d22,w.svg,,,,,indians,brown,see_rules.svg,,,,Ninja Attentäter,,,
+"As soon as she has no cards in her hand, she draws a card from the draw pile",e01,u.svg,,,,,Suzy Lafayette ,none,lifepoint.svg,lifepoint.svg,lifepoint.svg,lifepoint.svg,Start-Daimyo,5,0,1
+"he is considered to have a Mustang in play at all times; all other players must add 1 to the distance to him. If he has another real Mustang in play, he can count both of them, increasing all distances to him by a total of 2.",e02,u.svg,,,,,Paul Regret,none,lifepoint.svg,lifepoint.svg,lifepoint.svg,,Start-Daimyo,5,0,1
+"During the first phase of his turn, he may choose to draw the first card from the top of the discard pile or from the deck. Then, he draws the second card from the deck",e03,u.svg,,,,,Pedro Ramirez,none,lifepoint.svg,lifepoint.svg,lifepoint.svg,lifepoint.svg,Start-Daimyo,5,0,1
+"She can play BANG! cards as Missed! cards and vice versa. If she plays a Missed! as a BANG!, she cannot play another BANG! card that turn (unless she has a Volcanic in play).",e04,u.svg,,,,,Calamity Janet,none,lifepoint.svg,lifepoint.svg,lifepoint.svg,lifepoint.svg,Start-Daimyo,10,0,2
+"Each time he loses a life point due to a card played by another player, he draws a random card from the hands of that player (one card for each life point). If that player has no more cards, too bad!, he does not draw. Note that Dynamite damages are not caused by any player",e05,u.svg,,,,,El Gringo,none,lifepoint.svg,lifepoint.svg,lifepoint.svg,,Start-Daimyo,10,0,2
+"Whenever he is the target of a BANG!, he may ""draw!"": on a Heart, he is missed",e06,u.svg,,,,,Jourdonnais,none,lifepoint.svg,lifepoint.svg,lifepoint.svg,lifepoint.svg,Start-Daimyo,10,0,2
+"Each time he is required to ""draw!"" he flips the top two cards from the deck, and chooses the result he prefers. Discard both cards afterwards",e07,u.svg,,,,,Lucky Duke,none,lifepoint.svg,lifepoint.svg,lifepoint.svg,lifepoint.svg,Samurai/Ronin,0,6,0
+Players trying to cancel his BANG! cards need to play 2 Missed!,e08,u.svg,,,,,Slab the Killer,none,lifepoint.svg,lifepoint.svg,lifepoint.svg,lifepoint.svg,Samurai/Ronin,0,6,0
+He can play any number of BANG! during his turn,e09,u.svg,,,,,Willy the Kid,none,lifepoint.svg,lifepoint.svg,lifepoint.svg,lifepoint.svg,Samurai/Ronin,0,6,0
+"During phase 1 of his turn, he may choose to draw the first card from the deck, or randomly from the hand of any other player. Then he draws the second card from the deck",e10,u.svg,,,,,Jesse Jones,none,lifepoint.svg,lifepoint.svg,lifepoint.svg,lifepoint.svg,Samurai/Ronin,0,6,0
+"Each time he loses a life point, he immediately draws a card from the deck",e11,u.svg,,,,,Bart Cassidy,none,lifepoint.svg,lifepoint.svg,lifepoint.svg,lifepoint.svg,Samurai/Ronin,0,6,0
+"during phase 1 of his turn, he must show the second card he draws: if it’s Heart or Diamonds (just like a 'draw!'), he draws one additional card (without revealing it).",e12,u.svg,,,,,Black Jack,none,lifepoint.svg,lifepoint.svg,lifepoint.svg,lifepoint.svg,Samurai/Ronin,0,6,0
+"During phase 1 of his turn, he looks at the top three cards of the deck: he chooses 2 to draw, and puts the other one back on the top of the deck, face down",e13,u.svg,,,,,Kit Carlson,none,lifepoint.svg,lifepoint.svg,lifepoint.svg,lifepoint.svg,Daimyo,10,0,4
+"Rose Doolan is considered to have an Scope (Appaloosa in older versions) in play at all times; she sees the other players at a distance decreased by 1. If she has another real Scope in play, she can count both of them, reducing her distance to all other players by a total of 2.",e14,u.svg,,,,,Rose Doolan,none,lifepoint.svg,lifepoint.svg,lifepoint.svg,lifepoint.svg,Daimyo,15,2,3
+"At any time, he may discard 2 cards from his hand to regain one life point. If he is willing and able, he can use this ability more than once at a time. The BANG! FAQ spells out that Sid Ketchum can use his ability out of turn: ""Q26. Can Sid Ketchum use his ability even outside his turn, like a Beer card? A. Yes, he can.""",e15,u.svg,,,,,Sid Ketchum,none,lifepoint.svg,lifepoint.svg,lifepoint.svg,lifepoint.svg,Daimyo,20,1,5
+"Whenever a character is eliminated from the game, Sam takes all the cards that player had in his hand and in play, and adds them to his hand",e16,u.svg,,,,,Vulture Sam,none,lifepoint.svg,lifepoint.svg,lifepoint.svg,lifepoint.svg,Daimyo,30,1,4
+,e17,u.svg,,,,,,,,,,,Leibwache,,,
+,e18,u.svg,,,,,,,,,,,Leibwache,,,
+,e19,u.svg,,,,,,,,,,,Leibwache,,,
+,e20,u.svg,,,,,,,,,,,Leibwache,,,
+,e21,u.svg,,,,,,,,,,,Leibwache,,,
+If you discard the Princess—no matter how or why—she has tossed your letter into the fire. You are immediately knocked out of the round.,e22,u.svg,,Princess Annette,8,,,,,,,,Shogun,,,
