@@ -39,9 +39,11 @@ function getCsv($input) {
  * Ability box
  */
  foreach ($csv as $i => $card) {
-	// if ($i > 5) break;
+	if ($i < 15 OR $i > 45) continue;
+    echo "<div class=\"cardFrame\">                            ";
 	echo '<!-- ' . print_r($card, 1) . ' -->';
-    echo "<div class=\"cardFrame color-{$card['color']}\" style=\"background-image: url('img/{$card['id']}.jpg');\">                            ";
+    echo "<div class=\"cardBorder\">                            ";
+    echo "<div class=\"cardBackground color-{$card['color']}\" style=\"background-image: url('img/{$card['id']}.jpg');\">                            ";
     echo "	<div class=\"container title\">                  ";
     echo !$card['color'] ? '' : "		<div class=\"inner picto\"><img src=\"picto/{$card['color']}\" /></div>";
     echo !$card['suit']  ? '' : "		<div class=\"inner picto\"><img src=\"picto/{$card['suit']}\"  /></div>";
@@ -61,6 +63,8 @@ function getCsv($input) {
     echo !strlen($card['Ability box']) ? '' : "	<div class=\"container rulebox\">                ";
     echo !strlen($card['Ability box']) ? '' : "		{$card['Ability box']}                         ";
     echo !strlen($card['Ability box']) ? '' : "	</div>                                           ";
+    echo "</div>                                               ";
+    echo "</div>                                               ";
     echo "</div>                                               ";
  }
 ?>
