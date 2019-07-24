@@ -1,8 +1,18 @@
 * {
 	/*! border : 1px solid black; */
-	/* outline-style: solid; */
+	/*! outline-style: solid; */
 	outline-color: green;
 	outline-width: thin;
+
+    font-family: 'Shojumaru', cursive;
+    /*
+	font-family: 'Roboto', sans-serif;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Eagle Lake', cursive;
+    font-family: 'Chewy', cursive;
+    font-family: 'Knewave', cursive;
+	*/
 }
 
 .cardFrame {
@@ -13,6 +23,10 @@
 .cardBorder {
 	border : 15px solid black;
 	background-color: antiquewhite;
+	border-radius: 40px;
+	/*! outline: 15px solid blue; */
+	/*! outline-style: auto; */
+	/*! outline-width: 15px; */
 }
 .cardBackground {
 	background-position: center;
@@ -23,12 +37,21 @@
 	height: 1497px;
 	position: relative;
 }
+/** /
+.color-w .picto * { border: 5px solid yellow; }
+.color-u .picto * { border: 5px solid blue; }
+.color-b .picto * { border: 5px solid black; }
+.color-r .picto * { border: 5px solid red; }
+.color-g .picto * { border: 5px solid green; }
+/**/
 
-.color-w\.svg, .color-w\.svg img { border: 5px solid yellow; }
-.color-u\.svg, .color-u\.svg img { border: 5px solid blue; }
-.color-b\.svg, .color-b\.svg img { border: 5px solid black; }
-.color-r\.svg, .color-r\.svg img { border: 5px solid red; }
-.color-g\.svg, .color-g\.svg img  { border: 5px solid green; }
+/** /
+.color-w { border:15px solid yellow; }
+.color-u { border:15px solid blue  ; }
+.color-b { border:15px solid black ; }
+.color-r { border:15px solid red   ; }
+.color-g { border:15px solid green ; }
+/**/
 
 .container
 {
@@ -43,15 +66,22 @@
 .right-bar
 {
 	width: 150px;
-	bottom: 0px;
+	bottom: 360px;
 	right:0px; 
 }
 .rulebox
 {
-	bottom : 0px;
-	width:100%;
+	bottom : -4px;
+	/*! width:100%; */
 	height: 94px;
-	/*! background-image: linear-gradient(to bottom, rgba(255,255,255,0.5), rgb(255, 255, 255)); */
+	background-image: linear-gradient(to bottom, rgba(255,255,255,0.5), rgb(255, 255, 255));
+	height: 320px;
+	font-size: 35px;
+	padding: 20px;
+	/*! border: 5px solid red; */
+	/*! border-radius: 200px; */
+	/*! vertical-align: bottom; */
+	border-radius: 40px;
 }
 .title
 {
@@ -77,9 +107,11 @@
 .picto img, .picto span
 {
 	width:100%;
-	height:auto;
+	height:100%;
 	background-color: white;
+	border: 5px solid black;
 	border-radius: 100%;
+	object-fit: contain;
 }
 .picto span
 {
