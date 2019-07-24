@@ -47,20 +47,20 @@ function getCsv($input) {
     echo !$card['suit']  ? '' : "		<div class=\"inner picto\"><img src=\"picto/{$card['suit']}\"  /></div>";
     // echo "		<div class=\"inner head\">{$card['Bang name']}</div> ";
     echo "	</div>                                           ";
-    echo !$card['p1'] ? '' : "	<div class=\"container left-bar\">               ";
-    echo !$card['p1'] ? '' : "		<div class=\"inner picto\"><img src=\"picto/{$card['p1']}\" /></div>";
-    echo !$card['p2'] ? '' : "		<div class=\"inner picto\"><img src=\"picto/{$card['p2']}\" /></div>";
-    echo !$card['p3'] ? '' : "		<div class=\"inner picto\"><img src=\"picto/{$card['p3']}\" /></div>";
-    echo !$card['p4'] ? '' : "		<div class=\"inner picto\"><img src=\"picto/{$card['p4']}\" /></div>";
-    echo !$card['p1'] ? '' : "	</div>                                           ";
-    echo !$card['p5'] ? '' : "	<div class=\"container right-bar\">              ";
-    echo !$card['p5'] ? '' : "		<div class=\"inner picto\">{$card['p5']}</div>           ";
-    echo !$card['p5'] ? '' : "		<div class=\"inner picto\">{$card['p6']}</div>           ";
-    echo !$card['p5'] ? '' : "		<div class=\"inner picto\">{$card['p7']}</div>           ";
-    echo !$card['p5'] ? '' : "	</div>                                           ";
-    echo !$card['Ability box'] ? '' : "	<div class=\"container rulebox\">                ";
-    echo !$card['Ability box'] ? '' : "		{$card['Ability box']}                         ";
-    echo !$card['Ability box'] ? '' : "	</div>                                           ";
+    echo !strlen($card['p1']) ? '' : "	<div class=\"container left-bar\">               ";
+    echo !strlen($card['p1']) ? '' : "		<div class=\"inner picto\"><img src=\"picto/{$card['p1']}\" /></div>";
+    echo !strlen($card['p2']) ? '' : "		<div class=\"inner picto\"><img src=\"picto/{$card['p2']}\" /></div>";
+    echo !strlen($card['p3']) ? '' : "		<div class=\"inner picto\"><img src=\"picto/{$card['p3']}\" /></div>";
+    echo !strlen($card['p4']) ? '' : "		<div class=\"inner picto\"><img src=\"picto/{$card['p4']}\" /></div>";
+    echo !strlen($card['p1']) ? '' : "	</div>                                           ";
+    echo !strlen($card['p5']) ? '' : "	<div class=\"container right-bar\">              ";
+    echo !strlen($card['p5']) ? '' : "		<div class=\"inner picto\"><span>{$card['p5']}</span></div>           ";
+    echo !strlen($card['p5']) ? '' : "		<div class=\"inner picto\"><span>{$card['p6']}</span></div>           ";
+    echo !strlen($card['p5']) ? '' : "		<div class=\"inner picto\"><span>{$card['p7']}</span></div>           ";
+    echo !strlen($card['p5']) ? '' : "	</div>                                           ";
+    echo !strlen($card['Ability box']) ? '' : "	<div class=\"container rulebox\">                ";
+    echo !strlen($card['Ability box']) ? '' : "		{$card['Ability box']}                         ";
+    echo !strlen($card['Ability box']) ? '' : "	</div>                                           ";
     echo "</div>                                               ";
  }
 ?>
