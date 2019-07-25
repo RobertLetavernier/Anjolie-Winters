@@ -10,11 +10,13 @@ function getCsv($input) {
 }
 
 function pictify($str) {
-	$ret = "<span>{$str}</span>";
-	if (is_file("picto/{$str}")) {
-		$ret = "<img src=\"picto/{$str}\" />";
+	if (strlen($str)) {
+		$ret = "<span>{$str}</span>";
+		if (is_file("picto/{$str}")) {
+			$ret = "<img src=\"picto/{$str}\" />";
+		}
+		return $ret;
 	}
-	return $ret;
 }
 
     $csv = array_map('getCsv', file($file));
@@ -55,7 +57,7 @@ function pictify($str) {
     echo "<div class=\"cardBackground color-{$card['color']}\" style=\"background-image: url('img/{$card['id']}.jpg');\">                            ";
     echo "	<div class=\"container title\">                  ";
     echo !strlen($card['s1']) ? '' : "	<div class=\"inner picto\" style=\"position:absolute; left:10px;\">" . pictify($card['s1']) . "</div>";
-    echo "	<div class=\"inner head\">" . pictify($card['Bang name']) . "</div>";
+    echo "	<div class=\"inner head\">{$card['Bang name']}<br>" . pictify($card['ll']) . "</div>";
     echo !strlen($card['s2']) ? '' : "	<div class=\"inner picto\" style=\"position:absolute; right:10px;\">" . pictify($card['s2']) . "</div>";
     echo "	</div>                                           ";
     echo !strlen($card['p1']) ? '' : "	<div class=\"container left-bar\">               ";
@@ -69,7 +71,10 @@ function pictify($str) {
     echo !strlen($card['p5']) ? '' : "		<div class=\"inner picto\">" . pictify($card['p6']) . "</div>           ";
     echo !strlen($card['p5']) ? '' : "		<div class=\"inner picto\">" . pictify($card['p7']) . "</div>           ";
     echo !strlen($card['p5']) ? '' : "	</div>                                           ";
-    // echo !strlen($card['EDS']) ? '' : "	<div class=\"container head\">{$card['EDS']}</div> ";
+    echo "	<div class=\"inner head\">{$card['Bang name']}<br>" . pictify($card['ll']) . "</div>";
+    echo !strlen($card['ll'])          ? '' : "	<div class=\"container ll\">                ";
+    echo !strlen($card['ll'])          ? '' : "		<div class=\"inner picto\">" . pictify($card['ll']) . "</div>";
+    echo !strlen($card['ll'])          ? '' : "	</div>                                           ";
     echo !strlen($card['Ability box']) ? '' : "	<div class=\"container rulebox\">                ";
     echo !strlen($card['Ability box']) ? '' : "		{$card['Ability box']}                         ";
     echo !strlen($card['Ability box']) ? '' : "	</div>                                           ";

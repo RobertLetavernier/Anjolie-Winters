@@ -22,13 +22,13 @@ Ability box,id,color,s1,s2,love letter name,ll,love letter rule box,Bang name,Bo
 ,a21,b,cards-spade.svg,,,,,Beer,brown,beer.svg,,,,Gesicht wahren,,,
 ,a22,b,cards-spade.svg,,,,,Beer,brown,beer.svg,,,,Gesicht wahren,,,
 ,b01,r,cards-heart.svg,A.svg,,,,BANG,brown,bang.svg,,,,Krieger II,0,0,2
-"When you discard the Guard, choose a player and name a number (other than 1). If that player has that number in their hand, that player is knocked out of the round.",b02,r,cards-heart.svg,2.svg,Guard Odette,1,,BANG,brown,bang.svg,,,,Krieger II,0,0,2
-"When you discard the Guard, choose a player and name a number (other than 1). If that player has that number in their hand, that player is knocked out of the round.",b03,r,cards-heart.svg,3.svg,Guard Odette,1,,BANG,brown,bang.svg,,,,Krieger II,0,0,2
-"When you discard the Guard, choose a player and name a number (other than 1). If that player has that number in their hand, that player is knocked out of the round.",b04,r,cards-heart.svg,4.svg,Guard Odette,1,,BANG,brown,bang.svg,,,,Krieger II,0,0,2
-"When you discard the Guard, choose a player and name a number (other than 1). If that player has that number in their hand, that player is knocked out of the round.",b05,r,cards-heart.svg,5.svg,Guard Odette,1,,BANG,brown,bang.svg,,,,Ki Krieger,0,1,1
-"When you discard the Guard, choose a player and name a number (other than 1). If that player has that number in their hand, that player is knocked out of the round.",b06,r,cards-heart.svg,6.svg,Guard Odette,1,,BANG,brown,bang.svg,,,,Ki Krieger,0,1,1
-"When you discard the Priest, you can look at another player’s hand. Do not reveal the hand to any other players.",b07,r,cards-heart.svg,7.svg,Priest Tomas,2,,Missed,brown,missed.svg,,,,Krieger I,0,0,1
-"When you discard the Priest, you can look at another player’s hand. Do not reveal the hand to any other players.",b08,r,cards-heart.svg,8.svg,Priest Tomas,2,,Missed,brown,missed.svg,,,,Krieger I,0,0,1
+"When you discard the Guard, choose a player and name a number (other than 1). If that player has that number in their hand, that player is knocked out of the round.",b02,r,cards-heart.svg,2.svg,Guard Odette,numeric-1-box.svg,,BANG,brown,bang.svg,,,,Krieger II,0,0,2
+"When you discard the Guard, choose a player and name a number (other than 1). If that player has that number in their hand, that player is knocked out of the round.",b03,r,cards-heart.svg,3.svg,Guard Odette,numeric-1-box.svg,,BANG,brown,bang.svg,,,,Krieger II,0,0,2
+"When you discard the Guard, choose a player and name a number (other than 1). If that player has that number in their hand, that player is knocked out of the round.",b04,r,cards-heart.svg,4.svg,Guard Odette,numeric-1-box.svg,,BANG,brown,bang.svg,,,,Krieger II,0,0,2
+"When you discard the Guard, choose a player and name a number (other than 1). If that player has that number in their hand, that player is knocked out of the round.",b05,r,cards-heart.svg,5.svg,Guard Odette,numeric-1-box.svg,,BANG,brown,bang.svg,,,,Ki Krieger,0,1,1
+"When you discard the Guard, choose a player and name a number (other than 1). If that player has that number in their hand, that player is knocked out of the round.",b06,r,cards-heart.svg,6.svg,Guard Odette,numeric-1-box.svg,,BANG,brown,bang.svg,,,,Ki Krieger,0,1,1
+"When you discard the Priest, you can look at another player’s hand. Do not reveal the hand to any other players.",b07,r,cards-heart.svg,7.svg,Priest Tomas,numeric-2-box.svg,,Missed,brown,missed.svg,,,,Krieger I,0,0,1
+"When you discard the Priest, you can look at another player’s hand. Do not reveal the hand to any other players.",b08,r,cards-heart.svg,8.svg,Priest Tomas,numeric-2-box.svg,,Missed,brown,missed.svg,,,,Krieger I,0,0,1
 ,b09,r,cards-heart.svg,,,,,Missed,brown,missed.svg,,,,Krieger I,0,0,1
 ,b10,r,cards-heart.svg,,,,,,,,,,,Krieger III,0,0,3
 "When you discard King Arnaud IV, trade the card in your hand with the card held by another player of your choice.",b11,r,cards-heart.svg,K.svg,King Arnaud IV,6,,,,,,,,Krieger III,0,0,3
