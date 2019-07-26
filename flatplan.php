@@ -58,12 +58,12 @@ array_shift($csv); # remove column header
  */
  foreach ($csv as $i => $card) {
 	// if ($i < 15 OR $i > 45) continue;
-	// if ($i > 0) continue;
-	
+	if ($i > 3) continue;
+	$img = is_file("img/{$card['id']}.jpg") ? "img/{$card['id']}.jpg" : "https://picsum.photos/400/800?random=" . ($i%7);
     echo "<div class=\"cardFrame\">                            ";
 	echo '<!-- ' . print_r($card, 1) . ' -->';
     echo "<div class=\"cardBorder\">                            ";
-    echo "<div class=\"cardBackground color-{$card['color']}\" style=\"background-image: url('img/{$card['id']}.jpg');\">                            ";
+    echo "<div class=\"cardBackground color-{$card['color']}\" style=\"background-image: url('{$img}');\">                            ";
     echo "	<div class=\"container title\">                  ";
     echo !strlen($card['s1']) ? '' : "	<div class=\"inner picto\" style=\"position:absolute; left:10px;\">" . pictify($card['s1']) . "</div>";
     // echo "	<div class=\"inner head\">{$card['Bang name']}<br>" . pictify($card['ll']) . "</div>";
