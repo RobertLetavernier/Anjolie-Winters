@@ -16,12 +16,23 @@ function pictify($str) {
 		return $ret;
 	}
 }
+
+/**/
 $url = 'https://docs.google.com/spreadsheets/d/1NfLyZARK8k5lUvSt9xj-v4gAmCw4qMiJ0TqC_FsZDfI/export?gid=1675210374&format=csv&id=1NfLyZARK8k5lUvSt9xj-v4gAmCw4qMiJ0TqC_FsZDfI';
 $csv = array();
 if (($handle = fopen($url, "r")) !== FALSE) {
     while (($csv[] = fgetcsv($handle, 1000, ",")) !== FALSE);
     fclose($handle);
 }
+/*/
+function getCsv($input) {
+	return str_getcsv ( $input, ',', '"', '\\');
+}
+$csv = array_map('getCsv', file('data.csv'));
+array_walk($csv, function(&$a) use ($csv) {
+  $a = array_combine($csv[0], $a);
+});
+/**/
 
 array_walk($csv, function(&$a) use ($csv) {
   if ($a) {
