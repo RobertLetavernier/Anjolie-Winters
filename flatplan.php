@@ -1,13 +1,11 @@
 <?php
+// phpinfo();
+// die('x_x');
+
 /*
  * @see https://game-icons.net/tags/hand.html
  * @see https://www.makeplayingcards.com/products/playingcard/design/dn_playingcards_front_dynamic.aspx?ssid=0782A34F9813420FBE38F50EA4609995
  */
-
-$file = 'data.csv';
-function getCsv($input) {
-	return str_getcsv ( $input, ',', '"', '\\');
-}
 
 function pictify($str) {
 	if (strlen($str)) {
@@ -18,14 +16,23 @@ function pictify($str) {
 		return $ret;
 	}
 }
+$url = 'https://docs.google.com/spreadsheets/d/1NfLyZARK8k5lUvSt9xj-v4gAmCw4qMiJ0TqC_FsZDfI/export?gid=1675210374&format=csv&id=1NfLyZARK8k5lUvSt9xj-v4gAmCw4qMiJ0TqC_FsZDfI';
+$csv = array();
+if (($handle = fopen($url, "r")) !== FALSE) {
+    while (($csv[] = fgetcsv($handle, 1000, ",")) !== FALSE);
+    fclose($handle);
+}
 
-    $csv = array_map('getCsv', file($file));
-    array_walk($csv, function(&$a) use ($csv) {
-      $a = array_combine($csv[0], $a);
-    });
-    array_shift($csv); # remove column header
+array_walk($csv, function(&$a) use ($csv) {
+  if ($a) {
+	  $a = array_combine($csv[0], $a);
+  }
+});
+
+array_shift($csv); # remove column header
 	
 // print_r ($csv);
+// die('x_x');
 ?>
 <html>
 <head>
@@ -50,7 +57,9 @@ function pictify($str) {
  * Ability box
  */
  foreach ($csv as $i => $card) {
-	if ($i < 15 OR $i > 45) continue;
+	// if ($i < 15 OR $i > 45) continue;
+	// if ($i > 0) continue;
+	
     echo "<div class=\"cardFrame\">                            ";
 	echo '<!-- ' . print_r($card, 1) . ' -->';
     echo "<div class=\"cardBorder\">                            ";
