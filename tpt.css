@@ -22,17 +22,18 @@
 }
 .cardBorder {
 	border : 15px solid black;
-	background-color: antiquewhite;
+	/*! background-color: antiquewhite; */
 	border-radius: 40px;
 	/*! outline: 15px solid blue; */
 	/*! outline-style: auto; */
 	/*! outline-width: 15px; */
+	background-size: cover;
 }
 .cardBackground {
 	background-position: center;
 	background-size: cover;
 	background-repeat: normal;
-	border-radius: 500px;
+	border-radius: 25px;
 	width: 897px;
 	height: 1497px;
 	position: relative;
@@ -43,14 +44,12 @@
 .color-b .picto * { border: 5px solid black; }
 .color-r .picto * { border: 5px solid red; }
 .color-g .picto * { border: 5px solid green; }
-/**/
-
-/** /
-.color-w { border:15px solid yellow; }
-.color-u { border:15px solid blue  ; }
-.color-b { border:15px solid black ; }
-.color-r { border:15px solid red   ; }
-.color-g { border:15px solid green ; }
+/*/
+.color-w .cardBackground { background-image:url('bg/red.png'); }
+.color-u .cardBackground { background-image:url('bg/red.png'); }
+.color-b .cardBackground { background-image:url('bg/red.png'); }
+.color-r .cardBackground { background-image:url('bg/red.png'); }
+.color-g .cardBackground { background-image:url('bg/red.png'); }
 /**/
 
 .container
@@ -72,7 +71,7 @@
 }
 .rulebox
 {
-	bottom : -4px;
+	bottom : 1px;
 	/*! width:100%; */
 	height: 94px;
 	background-image: linear-gradient(to bottom, rgba(255,255,255,0.5), rgb(255, 255, 255));
@@ -82,7 +81,7 @@
 	/*! border: 5px solid red; */
 	/*! border-radius: 200px; */
 	/*! vertical-align: bottom; */
-	border-radius: 40px;
+	border-radius: 25px;
 }
 .title
 {
@@ -114,7 +113,7 @@
     font-size: 60px;
     margin: auto; 
     color: white;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-shadow: -10px -10px 10px #000, -10px +10px 10px #000, +10px -10px 10px #000, +10px +10px 10px #000;
 }
 .head span {
 	/* margin-top:20px; */
