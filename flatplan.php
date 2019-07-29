@@ -5,6 +5,8 @@
 /*
  * @see https://game-icons.net/tags/hand.html
  * @see https://www.makeplayingcards.com/products/playingcard/design/dn_playingcards_front_dynamic.aspx?ssid=0782A34F9813420FBE38F50EA4609995
+ *
+ * @try https://stackoverflow.com/questions/10721884/render-html-to-an-image
  */
 
 function pictify($str) {
