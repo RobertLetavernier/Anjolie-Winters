@@ -81,7 +81,7 @@ array_shift($csv); # remove column header
     echo "<div class=\"cardBackground\">                            ";
     echo "	<div class=\"container title\">                  ";
     echo !strlen($card['s1']) ? '' : "	<div class=\"inner picto\" style=\"position:absolute; left:10px;\">" . pictify($card['s1']) . "</div>";
-    echo "	<div class=\"inner head\">{$card['Bang name']}<br>" . pictify($card['ll']) . "</div>";
+    echo "	<div class=\"inner head\">{$card['Card name']}<br>" . $card['ll'] . "</div>";
     echo !strlen($card['s2']) ? '' : "	<div class=\"inner picto\" style=\"position:absolute; right:10px;\">" . pictify($card['s2']) . "</div>";
     echo "	</div>                                           ";
     echo !strlen($card['p1']) ? '' : "	<div class=\"container left-bar\">               ";
@@ -96,9 +96,9 @@ array_shift($csv); # remove column header
     echo !strlen($card['p5']) ? '' : "		<div class=\"inner picto\">" . pictify($card['p7']) . "</div>           ";
     echo !strlen($card['p5']) ? '' : "	</div>                                           ";
     // echo "	<div class=\"inner head\">{$card['Bang name']}</div>";
-    echo !strlen($card['ll'])          ? '' : "	<div class=\"container ll\">                ";
-    echo !strlen($card['ll'])          ? '' : "		<div class=\"inner picto\">" . pictify($card['ll']) . "</div>";
-    echo !strlen($card['ll'])          ? '' : "	</div>                                           ";
+    // echo !strlen($card['ll'])          ? '' : "	<div class=\"container ll\">                ";
+    // echo !strlen($card['ll'])          ? '' : "		<div class=\"inner picto\">" . pictify($card['ll']) . "</div>";
+    // echo !strlen($card['ll'])          ? '' : "	</div>                                           ";
     echo !strlen($card['Ability box']) ? '' : "	<div class=\"container rulebox\">                ";
     echo !strlen($card['Ability box']) ? '' : "		{$card['Ability box']}                         ";
     echo !strlen($card['Ability box']) ? '' : "	</div>                                           ";
