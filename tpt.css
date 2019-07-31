@@ -45,11 +45,11 @@
 .color-r .picto * { border: 5px solid red; }
 .color-g .picto * { border: 5px solid green; }
 /*/
-.color-w .cardBackground { background-image:url('bg/red.png'); }
-.color-u .cardBackground { background-image:url('bg/red.png'); }
-.color-b .cardBackground { background-image:url('bg/red.png'); }
-.color-r .cardBackground { background-image:url('bg/red.png'); }
-.color-g .cardBackground { background-image:url('bg/red.png'); }
+.color-w .cardBackground { background-image:url('bg/white.png'); }
+.color-u .cardBackground { background-image:url('bg/blue.png' ); }
+.color-b .cardBackground { background-image:url('bg/black.png'); }
+.color-r .cardBackground { background-image:url('bg/red.png'  ); }
+.color-g .cardBackground { background-image:url('bg/green.png'); }
 /**/
 
 .container
