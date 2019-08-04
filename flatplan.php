@@ -71,7 +71,7 @@ array_shift($csv); # remove column header
  */
  foreach ($csv as $i => $card) {
 	// if ($i < 15 OR $i > 45) continue;
-	if ($i < 85) continue;
+	// if ($i < 85) continue;
 	// if (isset($_GET['id']) && $_GET['id'] != $card['id']) continue;
 	
 	$img = "img/{$card['img']}";
