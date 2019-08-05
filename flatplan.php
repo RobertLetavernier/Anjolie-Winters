@@ -12,8 +12,10 @@
 function pictify($str) {
 	if (strlen($str)) {
 		$ret = "<span>{$str}</span>";
+		$ret = "<div class=\"inner picto-txt\"><span>{$str}</span></div>";
 		if (is_file("picto/{$str}")) {
-			$ret = "<img src=\"picto/{$str}\" />";
+			// $ret = "<img src=\"picto/{$str}\" />";
+			$ret = "<div class=\"inner picto-img\"><img src=\"picto/{$str}\" /></div>";
 		}
 		return $ret;
 	}
@@ -76,7 +78,7 @@ array_shift($csv); # remove column header
 	
 	$img = "img/{$card['img']}";
 	$img = is_file($img) ? $img : "img/{$card['id']}.jpg";
-	$img = is_file($img) ? $img : "https://picsum.photos/400/800?random=" . ($i%7);
+	// $img = is_file($img) ? $img : "https://picsum.photos/400/800?random=" . ($i%7);
 	
     echo "<div class=\"cardFrame color-{$card['color']}\">                            ";
 	echo '<!-- ' . print_r($card, 1) . ' -->';
@@ -84,24 +86,25 @@ array_shift($csv); # remove column header
     echo "<div class=\"cardForeground\">                            ";
     echo "	<div class=\"container title\">                  ";
     echo !strlen($card['s1']) ? '' : "	<div class=\"inner picto\" style=\"position:absolute; left:10px;\">" . pictify($card['s1']) . "</div>";
-    echo "	<div class=\"inner head\">{$card['Card name']}<br>" . $card['ll'] . "</div>";
+    echo "	<div class=\"inner head\">{$card['Card name']}</div>";
     echo !strlen($card['s2']) ? '' : "	<div class=\"inner picto\" style=\"position:absolute; right:10px;\">" . pictify($card['s2']) . "</div>";
     echo "	</div>                                           ";
     echo !strlen($card['p1']) ? '' : "	<div class=\"container left-bar\">               ";
-    echo !strlen($card['p1']) ? '' : "		<div class=\"inner picto\">" . pictify($card['p1']) . "</div>";
-    echo !strlen($card['p2']) ? '' : "		<div class=\"inner picto\">" . pictify($card['p2']) . "</div>";
-    echo !strlen($card['p3']) ? '' : "		<div class=\"inner picto\">" . pictify($card['p3']) . "</div>";
-    echo !strlen($card['p4']) ? '' : "		<div class=\"inner picto\">" . pictify($card['p4']) . "</div>";
+    echo !strlen($card['p1']) ? '' : "		" . pictify($card['p1']) . "";
+    echo !strlen($card['p2']) ? '' : "		" . pictify($card['p2']) . "";
+    echo !strlen($card['p3']) ? '' : "		" . pictify($card['p3']) . "";
+    echo !strlen($card['p4']) ? '' : "		" . pictify($card['p4']) . "";
+    echo !strlen($card['p5']) ? '' : "		" . pictify($card['p5']) . "";
     echo !strlen($card['p1']) ? '' : "	</div>                                           ";
-    echo !strlen($card['p5']) ? '' : "	<div class=\"container right-bar\">              ";
-    echo !strlen($card['p5']) ? '' : "		<div class=\"inner picto\">" . pictify($card['p5']) . "</div>           ";
-    echo !strlen($card['p5']) ? '' : "		<div class=\"inner picto\">" . pictify($card['p6']) . "</div>           ";
-    echo !strlen($card['p5']) ? '' : "		<div class=\"inner picto\">" . pictify($card['p7']) . "</div>           ";
-    echo !strlen($card['p5']) ? '' : "	</div>                                           ";
+    echo !strlen($card['q1']) ? '' : "	<div class=\"container right-bar\">              ";
+    echo !strlen($card['q1']) ? '' : "		" . pictify($card['q1']) . "           ";
+    echo !strlen($card['q1']) ? '' : "		" . pictify($card['q2']) . "           ";
+    echo !strlen($card['q1']) ? '' : "		" . pictify($card['q3']) . "           ";
+    echo !strlen($card['q1']) ? '' : "	</div>                                           ";
     // echo "	<div class=\"inner head\">{$card['Bang name']}</div>";
-    // echo !strlen($card['ll'])          ? '' : "	<div class=\"container ll\">                ";
-    // echo !strlen($card['ll'])          ? '' : "		<div class=\"inner picto\">" . pictify($card['ll']) . "</div>";
-    // echo !strlen($card['ll'])          ? '' : "	</div>                                           ";
+    echo !strlen($card['ll'])          ? '' : "	<div class=\"container ll\">                ";
+    echo !strlen($card['ll'])          ? '' : pictify($card['ll']);
+    echo !strlen($card['ll'])          ? '' : "	</div>                                           ";
     echo !strlen($card['Ability box']) ? '' : "	<div class=\"container rulebox\">                ";
     echo !strlen($card['Ability box']) ? '' : "		{$card['Ability box']}                         ";
     echo !strlen($card['Ability box']) ? '' : "	</div>                                           ";
