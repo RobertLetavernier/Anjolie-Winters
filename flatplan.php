@@ -4,6 +4,8 @@
 
 /*
  * @see https://game-icons.net/tags/hand.html
+ * @see http://bakadesign.dk/warhammer-40-000-icons/
+ 
  * @see https://www.makeplayingcards.com/products/playingcard/design/dn_playingcards_front_dynamic.aspx?ssid=0782A34F9813420FBE38F50EA4609995
  *
  * @try https://stackoverflow.com/questions/10721884/render-html-to-an-image
@@ -74,7 +76,7 @@ array_shift($csv); # remove column header
  foreach ($csv as $i => $card) {
 	// if ($i < 15 OR $i > 45) continue;
 	// if ($i < 85) continue;
-	// if (isset($_GET['id']) && $_GET['id'] != $card['id']) continue;
+	if (isset($_GET['id']) && $_GET['id'] != $card['id']) continue;
 	
 	$img = "img/{$card['img']}";
 	$img = is_file($img) ? $img : "img/{$card['id']}.jpg";

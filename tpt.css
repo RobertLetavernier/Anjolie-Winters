@@ -29,7 +29,10 @@
 	*/
 }
 
-
+body {
+	margin:0;
+	overflow:hidden;
+}
 
 .cardFrame {
 	/*! margin: 20px; */
@@ -38,13 +41,13 @@
 }
 .cardBackground {
 	border : 15px solid black;
-	border-radius: 40px;
+	/*! border-radius: 40px; */
 	background-position: center;
 	background-size: cover;
 	background-repeat: normal;
 }
 .cardForeground {
-	border-radius: 25px;
+	/*! border-radius: 25px; */
 	width: 897px;
 	height: 1497px;
 	position: relative;
