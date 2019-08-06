@@ -64,6 +64,7 @@ body {
 .color-b .cardForeground { background-image:url('bg/black.png'); }
 .color-r .cardForeground { background-image:url('bg/red.png'  ); }
 .color-g .cardForeground { background-image:url('bg/green.png'); }
+.color-z .cardForeground { background-image:url('bg/z.png'    ); }
 /**/
 
 .container

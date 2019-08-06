@@ -58,6 +58,39 @@ array_shift($csv); # remove column header
 </head>
 <body>
 <?php
+
+if (isset($_GET['id']) && $_GET['id'] == 'z00')
+{
+	$csv[0] = array(
+		'id' 			    => 'z00',
+		'color'             => '',
+		'Card name'         => '',
+		'img'               => 'zz_zelda_hey-listen.jpg',
+		'Ability box'       => '',
+		'll'                => '',
+		'p1'                => '',
+		'p2'                => '',
+		'p3'                => '',
+		'p4'                => '',
+		'p5'                => '',
+		'q1'                => '',
+		'q2'                => '',
+		'q3'                => '',
+		's1'                => '',
+		's2'            	=> '',
+		'aaa-id'        	=> '',
+		'aaa-EDS'       	=> '',
+		'aaa-Bang name' 	=> '',
+		'love letter name'  => '',
+		'aaa-s2'            => '',
+	);
+}
+
+
+
+
+
+
 /*
  * id
  * color
@@ -74,6 +107,7 @@ array_shift($csv); # remove column header
  * Ability box
  */
  foreach ($csv as $i => $card) {
+	 
 	// if ($i < 15 OR $i > 45) continue;
 	// if ($i < 85) continue;
 	if (isset($_GET['id']) && $_GET['id'] != $card['id']) continue;
