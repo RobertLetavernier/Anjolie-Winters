@@ -1,0 +1,10 @@
+2020-06-17 10:32:00
+Schtasking close_document.xml
+Schtasking delete_ghost.xml
+Schtasking document_export.xml
+Schtasking export_crea.xml
+Schtasking mail.xml
+Schtasking mediadata.xml
+Schtasking synchronisation.xml
+Schtasking synchronize_kiosk.xml
+2020-06-17 10:32:01

@@ -1,0 +1,6 @@
+E:\www\kiosk\kiosk_standard_310\emptyfolder\
+E:\www\kiosk\kiosk_standard_310\emptyfolder2
+E:\www\kiosk\kiosk_standard_310\conf\
+E:\www\kiosk\kiosk_standard_310\conf2
+E:\www\kiosk\kiosk_standard_310\data\kiosk.inc.php
+E:\www\kiosk\kiosk_standard_310\data\layout\

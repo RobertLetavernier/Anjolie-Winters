@@ -1,0 +1,9 @@
+open ftp.goademo.com
+goademo
+goa434tif
+binary
+ cd /www/easy3p_portal/package
+lcd E:\www\datas\_3p_pak\3\3.19\3.19.2
+put Easy3p_maj_3.19.1_vers_3.19.2.zip
+put Easy3p_maj_3.19.1_vers_3.19.2.pdf
+quit

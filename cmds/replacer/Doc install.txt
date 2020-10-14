@@ -1,0 +1,106 @@
+Replacements
+===============================================================================
+%date% : date du jour au format YYYY-MM-JJ
+%logiciel% : sygesp | arsia | alpia | common | whatever ... 
+%type% : full | partial | update | crypted
+%svnBranchKey% : belambra
+%vMaj% : 2.4.2
+%vMin% : 1891.1563
+
+Suppression par Regexp :
+    partials : \r\n(@b|@c).*
+    update   : \r\n@c.*
+    full     : 
+    all      : (@a|@b|@c)
+
+
+Introduction
+===============================================================================
+Ce document présente la documentation relative au déploiement du package
+%vMaj%.%vMin%_package_%logiciel%_%type%_%svnBranchKey%_%date%
+
+Cette procédure ne peut être suivie que pour la mise à jour d'un logiciel 
+%logiciel% en version majeur %vMaj%
+
+Cette procédure ne peut être suivis que pour un package %type%. 
+@aCe package ne doit contenir qu’un dossier htdocs
+
+Cette procédure utilise les correspondances suivantes :
+ - [date] : La date du jour au format YYYY-MM-DD.
+ - [instance] : L’instance de %logiciel% à mettre à jour.
+ - [stockage] : Le dossier de stockage des backups et delivery.
+ - [application_root] : Le dossier racine de l’instance à mettre à jour.
+ - [mysqllogin] : compte administrateur mysql
+ - [mysqlpsw] : mot de passe administrateur mysql
+
+Préparation de la procédure
+===============================================================================
+@a  Upload du package dans  [stockage]/_delivery/[instance]/
+@a  Désarchivage du package dans [stockage]/tmp/
+@b  Rédaction d’un email pour prévenir le client du démarrage du déploiement
+@b      Le déploiement du package [package] sur [instance] a commencé.
+@b  Verrouillage de SYGESP
+@b      Vérification des utilisateurs connectés
+@b      Déconnexions
+@b      Activation de la configuration de verrouillage
+@c      Arrêt des crons
+@c      Arrêt des services
+@a  Backup des éléments suivants dans [stockage]/_backup/[instance]/[date_instance]
+@c      [application_root]/bin/
+@c      [application_root]/tomcat7/idsc/config.config
+@c      [application_root]/tomcat7/mediadata/config.config
+@a      [application_root]/htdocs/
+@c      [application_root]/tools/
+@a  Backup des bases de données dans [stockage]/_backup/[instance]/[date_instance]/sql
+@a      mysqldump -u[mysqllogin] -p[mysqlpsw] [instance]_core > [instance]_core.sql
+@a      mysqldump -u[mysqllogin] -p[mysqlpsw] [instance]_mediadata > [instance]_mediadata.sql
+@a      mysqldump -u[mysqllogin] -p[mysqlpsw] [instance]_pim > [instance]_pim.sql
+@c  Backup des éléments suivants dans [stockage]/_backup/[instance]/[date_instance]/workingDir
+@c      [application_root]/workingDir/…
+@c      ...
+
+Déroulement de la procédure
+===============================================================================
+@c  Déploiement des tierces parties
+@c  Déploiement d’idsconnector
+@c  Déploiement de mediadata
+@a  Déploiement des sources
+@b  Mise à jour des bases de données
+@b      Exécution des patchs non joués
+@b          Core
+@b          Mediadata
+@b          Pim
+@b      Suppression des patchs
+@b  Mise à jour des config
+@b      [application_root]/conf/config.php
+@c      idsconnector
+@c      mediadata
+@b  Mise à jour des crons
+@b      déploiement des scripts
+@b      Édition des tâches planifiée
+@b  Restarts
+@c      tomcat
+@c      web server
+@c      cron
+@a  Test / validation
+@c  Unlock partiel
+@c      Mail pour prévenir le client de la fin du déploiement
+@c          Le déploiement est terminé. 
+@c          La plateforme [instance] est de nouveau accessible.
+@c          Merci de valider [bugfix].
+@b  Unlock complet après retour du client
+@b  Mail pour prévenir le client de la disponibilité de la plateforme
+
+Après la procédure
+===============================================================================
+    Mettre à jour Installation Overview dans le drive
+    SVN : si passage de test à prod, passage de la branche evol à stable
+    Purge des dossiers stockés
+        [stockage]/_delivery/tmp/
+            On supprime tout le dossier
+        [stockage]/_delivery/[instance]
+            On conserve les 4 packages les plus récents
+            On conserve les package datant de moins de 6 mois glissant
+        [stockage]/_backup/[instance]/
+            On conserve les 4 packages les plus récents
+            On conserve les package datant de moins de 6 mois glissant
