@@ -14,7 +14,7 @@
 	outline-color: green;
 	outline-width: thin;
 
-	/* font-family: 'planewalkerregular', Arial, sans-serif; */
+	/*! font-family: 'planewalkerregular', Arial, sans-serif; */
 	font-weight:normal;
 	font-style:normal;
 	
@@ -29,7 +29,10 @@
 	*/
 }
 
-
+body {
+	margin:0;
+	overflow:hidden;
+}
 
 .cardFrame {
 	/*! margin: 20px; */
@@ -38,29 +41,30 @@
 }
 .cardBackground {
 	border : 15px solid black;
-	border-radius: 40px;
+	/*! border-radius: 40px; */
 	background-position: center;
 	background-size: cover;
 	background-repeat: normal;
 }
 .cardForeground {
-	border-radius: 25px;
+	/*! border-radius: 25px; */
 	width: 897px;
 	height: 1497px;
 	position: relative;
 }
 /** /
-.color-w .picto * { border: 5px solid yellow; }
-.color-u .picto * { border: 5px solid blue; }
-.color-b .picto * { border: 5px solid black; }
-.color-r .picto * { border: 5px solid red; }
-.color-g .picto * { border: 5px solid green; }
+.color-w .picto-img * { border: 5px solid yellow; }
+.color-u .picto-img * { border: 5px solid blue; }
+.color-b .picto-img * { border: 5px solid black; }
+.color-r .picto-img * { border: 5px solid red; }
+.color-g .picto-img * { border: 5px solid green; }
 /*/
 .color-w .cardForeground { background-image:url('bg/white.png'); }
 .color-u .cardForeground { background-image:url('bg/blue.png' ); }
 .color-b .cardForeground { background-image:url('bg/black.png'); }
 .color-r .cardForeground { background-image:url('bg/red.png'  ); }
 .color-g .cardForeground { background-image:url('bg/green.png'); }
+.color-z .cardForeground { background-image:url('bg/z.png'    ); }
 /**/
 
 .container
@@ -79,7 +83,7 @@
 {
 	width: 150px;
 	bottom: 360px;
-	right:0px; 
+	right:10px; 
 }
 .rulebox
 {
@@ -103,11 +107,13 @@
 }
 .ll {
     font-size: 60px;
-    width: 100%;
+    width: 150px;
     height: 150px;
-    bottom: 1280px;
+    bottom: 275px;
     text-align: center;
     z-index: 99;
+    margin-left: 350px;
+    /*! background-color: antiquewhite; */
 }
 
 
@@ -130,13 +136,22 @@
 .head span {
 	/* margin-top:20px; */
 }
-.picto
+
+.picto-txt {
+	float:right;
+    font-size: 100px;
+    text-shadow: -10px -10px 10px #fff, -10px +10px 10px #fff, +10px -10px 10px #fff, +10px +10px 10px #fff;
+    font-family: 'planewalkerregular';
+	min-width: 100px;
+}
+
+.picto-img
 {
 	width:130px;
 	height:130px;
 	margin: 10px;
 }
-.picto img, .picto span
+.picto-img img, .picto-img span
 {
 	width:100%;
 	height:100%;
@@ -145,7 +160,7 @@
 	border-radius: 100%;
 	object-fit: contain;
 }
-.picto span
+.picto-img span
 {
 	  width: 100%;
 	  height: 100%;
